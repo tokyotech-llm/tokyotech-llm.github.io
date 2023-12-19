@@ -6,21 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>TokyoTech-LLM</title>
-  <meta name='description' content='東京工業大学情報理工学院の岡崎研究室と横田研究室で大規模言語モデルの研究・開発をしています'>
+  <title>Swallow</title>
+  <meta name='description' content='Llama 2の日本語能力を強化した大規模言語モデル (7B, 13B, 70B)'>
 
-  <link rel="canonical" href="https://tokyotech-llm.github.io/">
+  <link rel="canonical" href="https://tokyotech-llm.github.io/swallow-llama">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TokyoTech-LLM">
-  <meta name="twitter:description" content="東京工業大学情報理工学院の岡崎研究室と横田研究室で大規模言語モデルの研究・開発をしています">
-  <meta name="twitter:image:src" content="https://tokyotech-llm.github.io/images/tokyotech-llm.png">
+  <meta name="twitter:title" content="Swallow – TokyoTech-LLM">
+  <meta name="twitter:description" content="Llama 2の日本語能力を強化した大規模言語モデル (7B, 13B, 70B)">
+  <meta name="twitter:image:src" content="https://tokyotech-llm.github.io/images/swallow-llama.png">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="TokyoTech-LLM">
-  <meta property="og:description" content="東京工業大学情報理工学院の岡崎研究室と横田研究室で大規模言語モデルの研究・開発をしています">
-  <meta property="og:image" content="https://tokyotech-llm.github.io/images/tokyotech-llm.png">
+  <meta property="og:title" content="Swallow – TokyoTech-LLM">
+  <meta property="og:description" content="Llama 2の日本語能力を強化した大規模言語モデル (7B, 13B, 70B)">
+  <meta property="og:image" content="https://tokyotech-llm.github.io/images/swallow-llama.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800;900&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
   
     <div class="top-cover">
       <div class="cover-image">
-        <img class="lazy" data-src="images/tokyotech-llm.png" alt="TokyoTech-LLM">
+        <img class="lazy" data-src="images/swallow-llama.png" alt="TokyoTech-LLM">
       </div>
     </div>
   
@@ -79,7 +79,7 @@
             
               
               <li class="nav__item">
-                <a href="/" class="nav__link active-link">Home</a>
+                <a href="/" class="nav__link">Home</a>
               </li>
               
             
@@ -88,7 +88,7 @@
                 <span class="nav__link dropdown-toggle">Projects <i class="ion ion-ios-arrow-down arrow-down"></i></span>
                 <div class="dropdown-menu">
                   
-                    <a href="/swallow-llama" class="nav__link">Swallow</a>
+                    <a href="/swallow-llama" class="nav__link active-link">Swallow</a>
                   
                 </div>
               </li>
@@ -118,7 +118,8 @@
 
   <!-- begin content -->
   <main class="content animate" aria-label="Content">
-    <!-- begin author -->
+    
+<!-- begin author -->
 <section class="author">
     <div class="container">
       <div class="row">
@@ -126,8 +127,8 @@
           <div class="author__inner">
   
             <div class="author__left">
-              <h1 class="author__name">TokyoTech-LLM</h1>
-              <p class="author__bio">東京工業大学情報理工学院の岡崎研究室と横田研究室で大規模言語モデルの研究・開発をしています。</p>
+              <h1 class="author__name">Swallow</h1>
+              <p class="author__bio">Llama 2の日本語能力を強化した大規模言語モデル (7B, 13B, 70B) です。モデルのパラメータ（重み）が公開されていますので、LLAMA 2 Community Licenseに従う限り、研究や商業利用など自由に利用できます。</p>
               
               <a class="author__btn" href="https://huggingface.co/tokyotech-llm">
                 <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> View on HuggingFace
@@ -137,7 +138,7 @@
 
             <div class="author__right">
               <div class="author__image">
-                <img class="lazy" data-src="images/tokyotech-llm.png" alt="TokyoTech-LLM">
+                <img class="lazy" data-src="images/swallow-llama.png" alt="Swallow" />
               </div>
             </div>
 
@@ -146,404 +147,592 @@
       </div>
     </div>
   </section>
-  <!-- end author -->
+<p><!-- end author --></p>
 
-<!-- begin blog -->
-<section class="section blog">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="contaniner__inner animate">
-  
-        <div class="section__info">
-          <div class="section__head">
-            <h2 class="section__title"><span class="text-span">プロジェクト</span></h2>
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="abstract">
+                
+                <h2 class="section__title"><span class="text-span">概要</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
           </div>
-          
-        </div>
-  
-          <div class="row">
+          <div>
             
-              
-              <div class="article col col-4 col-d-6 col-t-12">
-                <div class="article__inner">
-              
-                  
-                    <div class="image-wrap">
-                      <a class="article__image" href="/swallow-llama">
-                        <img class="lazy" data-src="/images/swallow-llama.png" alt="Swallow">
-                      </a>
-                    </div>
-                  
-              
-                  <div class="article__content">
-              
-                    <h2 class="article__title">
-                      <a href="/swallow-llama">Swallow</a>
-                    </h2>
+<p>大規模言語モデルSwallowは東京工業大学情報理工学院の岡崎研究室と横田研究室、国立研究開発法人産業技術総合研究所の研究チームで開発された大規模言語モデルです。英語の言語理解や対話で高い能力を持つ大規模言語モデルLlama 2 7B, 13B, 70Bの日本語能力を拡張するため、研究チームは言語モデルに日本語の文字や単語などの語彙を追加したうえで、新たに開発した日本語データを用いてモデルの構築を継続的に行う継続事前学習を行いました。研究チームで実施した性能評価では、2023年12月現在オープンな大規模言語モデルの中で、日本語に関して最高性能を達成しました。今回公開したモデルは7B, 13B, 70Bの継続事前学習モデル（base）と、それぞれに指示チューニングを施した言語モデル（instruct）の計6種類で、Hugging Faceからモデルをダウンロードできます。</p>
 
-                    
-                    <p class="article__excerpt">Llama 2の日本語能力を強化した大規模言語モデル (7B, 13B, 70B)</p>
-                    
-                  </div>
-                </div>
-              </div>              
-              
-            
+<ul>
+  <li>Swallow 7B base: <a href="https://huggingface.co/tokyotech-llm/Swallow-7b-hf">https://huggingface.co/tokyotech-llm/Swallow-7b-hf</a></li>
+  <li>Swallow 7B instruct: <a href="https://huggingface.co/tokyotech-llm/Swallow-7b-instruct-hf">https://huggingface.co/tokyotech-llm/Swallow-7b-instruct-hf</a></li>
+  <li>Swallow 13B base: <a href="https://huggingface.co/tokyotech-llm/Swallow-13b-hf">https://huggingface.co/tokyotech-llm/Swallow-13b-hf</a></li>
+  <li>Swallow 13B instruct: <a href="https://huggingface.co/tokyotech-llm/Swallow-13b-instruct-hf">https://huggingface.co/tokyotech-llm/Swallow-13b-instruct-hf</a></li>
+  <li>Swallow 70B base: <a href="https://huggingface.co/tokyotech-llm/Swallow-70b-hf">https://huggingface.co/tokyotech-llm/Swallow-70b-hf</a></li>
+  <li>Swallow 70B instruct: <a href="https://huggingface.co/tokyotech-llm/Swallow-70b-instruct-hf">https://huggingface.co/tokyotech-llm/Swallow-70b-instruct-hf</a></li>
+</ul>
+
+<p>SwallowのライセンスはLlama 2の<a href="https://ai.meta.com/llama/license/">LLAMA 2 Community License</a>を継承しています。このライセンスに従う限りにおいては、研究および商業目的での利用が可能です。</p>
+
+
           </div>
-
         </div>
       </div>
     </div>
-  </div>
 </section>
-<!-- end blog -->
+<!-- end section -->
 
-<!-- begin blog -->
-<section class="section blog">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="contaniner__inner animate">
-  
-        <div class="section__info">
-          <div class="section__head">
-            <h2 class="section__title"><span class="text-span">Blog</span>記事</h2>
-            <a class="section__link" href="/blog">View all <i class="ion ion-md-arrow-forward"></i></a>
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="evaluation">
+                
+                <h2 class="section__title"><span class="text-span">性能</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
           </div>
-          
-        </div>
-  
-          <div class="row">
+          <div>
             
-              
-                <div class="article col col-4 col-d-6 col-t-12">
-  <div class="article__inner">
+<p>Llama 2に継続事前学習を行ったモデルで日本語の性能を比較しました。ただし、13Bのモデルは比較対象が無いため、日本語でフルスクラッチで学習したモデルとの比較を含めました。この結果から、Swallowは継続事前学習で日本語の能力を着実に伸ばしたこと、フルスクラッチで事前学習したモデルよりも高い性能を持つことが分かります。また、Swallowの継続事前学習にあたり、日本語の語彙を追加していますが、他のモデルでは日本語の語彙追加で性能が落ちるという報告があったため、比較対象のモデルは語彙追加を行っていないものを採用しています。我々が行った比較実験においては、語彙追加の有無による評価スコアの差は僅かで、むしろ系列長が短くなることのメリットの方が大きいことから、語彙追加ありのモデルを採用しています。</p>
 
+<div class="row">
     
-      <div class="image-wrap">
-        <a class="article__image" href="//blog/swallow-llama">
-          <img class="lazy" data-src="//images/swallow-llama.png" alt="大規模言語モデルSwallowを公開">
-        </a>
-      </div>
-    
-
-    <div class="article__content">
-
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
       
-        <div class="article-tags__box">
           
-            <a href="//tag/news" class="article__tag">news</a>
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/7B_ja.svg">
+                <img class="lazy" data-src="images/7B_ja.svg" alt="7Bモデルの性能（日本語）" />
+              </a>
+            </div>
           
-            <a href="//tag/LLM" class="article__tag">LLM</a>
-          
-        </div>
       
-
-      <h2 class="article__title">
-        <a href="//blog/swallow-llama">大規模言語モデルSwallowを公開</a>
-      </h2>
-
-      <p class="article__excerpt">
-        Llama 2に対する継続事前学習で日本語を強化した大規模言語モデルSwallowを公開しました。詳しくは、Swallowをご覧ください。
-
-      </p>
-
-      <div class="article__meta">
-        <a href="//about/" class="article__author-image">
-          <img src="/images/tokyotech-llm.png" alt="TokyoTech-LLM">
-        </a>
-        <div class="article-info">
-          <a href="//about/" class="article__author-link">TokyoTech-LLM</a>
-          <span class="article__date"><time datetime="2023-12-19T15:00:00+09:00">19 Dec 2023</time></span>
+          <div class="figure__content">
+            
+            <h2 class="figure__title">7Bモデルの性能（日本語）</h2>
+      
+            
+          </div>
         </div>
-      </div>
-
     </div>
-  </div>
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/13B_ja.svg">
+                <img class="lazy" data-src="images/13B_ja.svg" alt="13Bモデルの性能（日本語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">13Bモデルの性能（日本語）</h2>
+      
+            
+          </div>
+        </div>
+    </div>
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/70B_ja.svg">
+                <img class="lazy" data-src="images/70B_ja.svg" alt="70Bモデルの性能（日本語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">70Bモデルの性能（日本語）</h2>
+      
+            
+          </div>
+        </div>
+    </div>
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/swallow_ja.svg">
+                <img class="lazy" data-src="images/swallow_ja.svg" alt="Swallowの7B, 13B, 70Bの性能（日本語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">Swallowの7B, 13B, 70Bの性能（日本語）</h2>
+      
+            
+          </div>
+        </div>
+    </div>
+    
 </div>
-              
+
+<p>続いて、英語の性能を示します。Swallowの英語の性能は元のモデルよりも若干低下しています。Swallowでは継続事前学習に日本語と英語のテキストを混ぜたデータを利用していますが、他のモデルでよく用いられる混合比1:1ではなく、日本語を重視した9:1を採用しています。これが英語の性能低下に繋がったのかどうかは、今後の追加実験で明らかにしていく予定です。</p>
+
+<div class="row">
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/7B_en.svg">
+                <img class="lazy" data-src="images/7B_en.svg" alt="7Bモデルの性能（英語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">7Bモデルの性能（英語）</h2>
+      
             
           </div>
-
         </div>
-      </div>
     </div>
-  </div>
-</section>
-<!-- end blog -->
-
-<!-- begin testimonials -->
-<section class="section testimonials">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-
-        <div class="section__info">
-          <div class="section__head">
-            <h2 class="section__title"><span class="text-span">メンバー</span></h2>
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/13B_en.svg">
+                <img class="lazy" data-src="images/13B_en.svg" alt="13Bモデルの性能（英語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">13Bモデルの性能（英語）</h2>
+      
+            
           </div>
         </div>
-
-        <div class="row">
+    </div>
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
           
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/okazaki.jpg" alt="岡崎 直観">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">岡崎 直観</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 教授</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">全体の統括、学習コーパス構築の統括および開発を担当</p>
-                
-              </div>
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/70B_en.svg">
+                <img class="lazy" data-src="images/70B_en.svg" alt="70Bモデルの性能（英語）" />
+              </a>
             </div>
-          </article>
           
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/yokota.jpg" alt="横田 理央">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">横田 理央</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 教授</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">大規模言語モデル学習の統括を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/fujii.jpg" alt="藤井 一喜">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">藤井 一喜</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 学部生</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">大規模言語モデル学習における開発、予備実験、本実験を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/nakamura.jpg" alt="中村 泰士">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">中村 泰士</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 学部生</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">大規模言語モデル学習における実験、評価実験を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/hattori.jpg" alt="服部 翔">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">服部 翔</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 修士課程</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">学習コーパス構築の開発およびジョブ管理を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/hirai.jpg" alt="平井 翔太">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">平井 翔太</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 修士課程</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">学習コーパス構築の開発およびジョブ管理を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/loem.jpg" alt="Mengsay Loem">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">Mengsay Loem</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 修士課程</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">大規模言語モデルの評価の計画および実験を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/ohi.jpg" alt="大井 聖也">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">大井 聖也</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 学部生</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">学習コーパス構築の開発を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/iida.jpg" alt="飯田 大貴">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">飯田 大貴</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 博士課程</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">継続事前学習における語彙拡張の設計と開発を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
-          <article class="project col col-4 col-d-6 col-t-12">
-            <div class="testimonial-item">
-              <div class="testimonial-content">
-                <div class="client-meta">
-                  
-                    <div class="image-container">
-                      <img class="client-avatar" src="/images/member/mizuki.jpg" alt="水木 栄">
-                    </div>
-                  
-                  <div class="client-info">
-                    
-                      <h3 class="client-name">水木 栄</h3>
-                    
-                    
-                      <p class="client-designation">東京工業大学 博士課程</p>
-                    
-                  </div>
-                </div>
-                
-                  <p class="client-text">大規模言語モデルの評価の統括および分析を担当</p>
-                
-              </div>
-            </div>
-          </article>
-          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">70Bモデルの性能（英語）</h2>
+      
+            
+          </div>
         </div>
+    </div>
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="/images/swallow_en.svg">
+                <img class="lazy" data-src="images/swallow_en.svg" alt="Swallowの7B, 13B, 70Bの性能（英語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">Swallowの7B, 13B, 70Bの性能（英語）</h2>
+      
+            
+          </div>
+        </div>
+    </div>
+    
+</div>
 
+<p>なお、ベンチマークのスコアを異なるデータセット間で比較することができないことに注意してください。例えば、70Bモデルの日本語の評価結果において、機械翻訳のスコアよりも数学のスコアの方が高いですが、これはSwallowが翻訳よりも数学が得意であることを示唆しているのではありません（問題の難易度や採点基準が全く異なる試験の結果を比較しているようなものです）。同様の理由により、日本語タスクのスコアの平均値よりも、英語タスクのスコアの平均値の方が高いからといって、Swallowは英語の方が得意、と結論付けることもできません。ベンチマークのデータセットによって評価尺度や難易度が異なるため、このレーダーチャートの形状だけからタスクの得意・不得意について議論することは不適切です。</p>
+
+<p>最後に、研究チームで実施した日本語の評価ベンチマークでの比較実験結果を示します。この評価実験ではパラメータの重みが公開されているオープンなモデルの性能を測定しました。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">モデル</th>
+      <th style="text-align: right">日本語平均</th>
+      <th style="text-align: right">JComQA</th>
+      <th style="text-align: right">JEMHopQA</th>
+      <th style="text-align: right">NIILC</th>
+      <th style="text-align: right">JSQuAD</th>
+      <th style="text-align: right">XL-Sum</th>
+      <th style="text-align: right">日英翻訳</th>
+      <th style="text-align: right">英日翻訳</th>
+      <th style="text-align: right">MGSM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 7B (base, 語彙拡張あり)</td>
+      <td style="text-align: right">0.2937</td>
+      <td style="text-align: right">0.2172</td>
+      <td style="text-align: right">0.4482</td>
+      <td style="text-align: right">0.4309</td>
+      <td style="text-align: right">0.8202</td>
+      <td style="text-align: right">0.0757</td>
+      <td style="text-align: right">0.1453</td>
+      <td style="text-align: right">0.1601</td>
+      <td style="text-align: right">0.0520</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CyberAgentLM2 (7B)</td>
+      <td style="text-align: right">0.3098</td>
+      <td style="text-align: right">0.2198</td>
+      <td style="text-align: right">0.5047</td>
+      <td style="text-align: right">0.5066</td>
+      <td style="text-align: right">0.7799</td>
+      <td style="text-align: right">0.0233</td>
+      <td style="text-align: right">0.1499</td>
+      <td style="text-align: right">0.2345</td>
+      <td style="text-align: right">0.0600</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ELYZA-japanese-Llama-2-7b-fast</td>
+      <td style="text-align: right">0.3312</td>
+      <td style="text-align: right">0.5308</td>
+      <td style="text-align: right">0.4330</td>
+      <td style="text-align: right">0.3898</td>
+      <td style="text-align: right">0.8131</td>
+      <td style="text-align: right">0.1289</td>
+      <td style="text-align: right">0.1143</td>
+      <td style="text-align: right">0.1678</td>
+      <td style="text-align: right">0.0720</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 7B (base, 語彙拡張なし)</td>
+      <td style="text-align: right">0.3366</td>
+      <td style="text-align: right">0.3610</td>
+      <td style="text-align: right">0.4478</td>
+      <td style="text-align: right">0.4432</td>
+      <td style="text-align: right">0.8318</td>
+      <td style="text-align: right">0.2195</td>
+      <td style="text-align: right">0.1226</td>
+      <td style="text-align: right">0.1946</td>
+      <td style="text-align: right">0.0720</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ELYZA-japanese-Llama-2-7b (語彙拡張なし)</td>
+      <td style="text-align: right">0.3467</td>
+      <td style="text-align: right">0.5791</td>
+      <td style="text-align: right">0.4703</td>
+      <td style="text-align: right">0.4019</td>
+      <td style="text-align: right">0.8226</td>
+      <td style="text-align: right">0.1312</td>
+      <td style="text-align: right">0.1289</td>
+      <td style="text-align: right">0.1795</td>
+      <td style="text-align: right">0.0600</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mistral v0.1 (7B, base)</td>
+      <td style="text-align: right">0.3717</td>
+      <td style="text-align: right">0.7301</td>
+      <td style="text-align: right">0.4245</td>
+      <td style="text-align: right">0.2722</td>
+      <td style="text-align: right">0.8563</td>
+      <td style="text-align: right">0.2006</td>
+      <td style="text-align: right">0.1733</td>
+      <td style="text-align: right">0.1405</td>
+      <td style="text-align: right">0.1760</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Gamma (7B, base, 語彙拡張なし)</td>
+      <td style="text-align: right">0.4301</td>
+      <td style="text-align: right">0.7364</td>
+      <td style="text-align: right">0.4643</td>
+      <td style="text-align: right">0.5568</td>
+      <td style="text-align: right">0.8910</td>
+      <td style="text-align: right">0.2293</td>
+      <td style="text-align: right">0.1561</td>
+      <td style="text-align: right">0.2390</td>
+      <td style="text-align: right">0.1680</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Llama 2 7B (base)</td>
+      <td style="text-align: right">0.3201</td>
+      <td style="text-align: right">0.3852</td>
+      <td style="text-align: right">0.4240</td>
+      <td style="text-align: right">0.3410</td>
+      <td style="text-align: right">0.7917</td>
+      <td style="text-align: right">0.1905</td>
+      <td style="text-align: right">0.1737</td>
+      <td style="text-align: right">0.1783</td>
+      <td style="text-align: right">0.0760</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Swallow 7B (base)</strong></td>
+      <td style="text-align: right">0.3940</td>
+      <td style="text-align: right">0.4808</td>
+      <td style="text-align: right">0.5078</td>
+      <td style="text-align: right">0.5968</td>
+      <td style="text-align: right">0.8573</td>
+      <td style="text-align: right">0.1830</td>
+      <td style="text-align: right">0.1511</td>
+      <td style="text-align: right">0.2510</td>
+      <td style="text-align: right">0.1240</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Stockmark-13b</td>
+      <td style="text-align: right">0.2495</td>
+      <td style="text-align: right">0.2216</td>
+      <td style="text-align: right">0.0917</td>
+      <td style="text-align: right">0.5021</td>
+      <td style="text-align: right">0.7303</td>
+      <td style="text-align: right">0.0773</td>
+      <td style="text-align: right">0.0811</td>
+      <td style="text-align: right">0.2040</td>
+      <td style="text-align: right">0.0880</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LLM-jp-13B</td>
+      <td style="text-align: right">0.2889</td>
+      <td style="text-align: right">0.2261</td>
+      <td style="text-align: right">0.4790</td>
+      <td style="text-align: right">0.3857</td>
+      <td style="text-align: right">0.7744</td>
+      <td style="text-align: right">0.1082</td>
+      <td style="text-align: right">0.1185</td>
+      <td style="text-align: right">0.1955</td>
+      <td style="text-align: right">0.0240</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">PLaMo-13B</td>
+      <td style="text-align: right">0.2923</td>
+      <td style="text-align: right">0.2270</td>
+      <td style="text-align: right">0.5189</td>
+      <td style="text-align: right">0.4137</td>
+      <td style="text-align: right">0.7621</td>
+      <td style="text-align: right">0.1025</td>
+      <td style="text-align: right">0.1196</td>
+      <td style="text-align: right">0.1582</td>
+      <td style="text-align: right">0.0360</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Llama 2 13B (base)</td>
+      <td style="text-align: right">0.3963</td>
+      <td style="text-align: right">0.6997</td>
+      <td style="text-align: right">0.4415</td>
+      <td style="text-align: right">0.417</td>
+      <td style="text-align: right">0.8533</td>
+      <td style="text-align: right">0.2139</td>
+      <td style="text-align: right">0.1982</td>
+      <td style="text-align: right">0.2146</td>
+      <td style="text-align: right">0.1320</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Swallow 13B (base)</strong></td>
+      <td style="text-align: right">0.4625</td>
+      <td style="text-align: right">0.7837</td>
+      <td style="text-align: right">0.5063</td>
+      <td style="text-align: right">0.6398</td>
+      <td style="text-align: right">0.9005</td>
+      <td style="text-align: right">0.2168</td>
+      <td style="text-align: right">0.1771</td>
+      <td style="text-align: right">0.2720</td>
+      <td style="text-align: right">0.2040</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 70B (base)</td>
+      <td style="text-align: right">0.5138</td>
+      <td style="text-align: right">0.9115</td>
+      <td style="text-align: right">0.4925</td>
+      <td style="text-align: right">0.6042</td>
+      <td style="text-align: right">0.9192</td>
+      <td style="text-align: right">0.2573</td>
+      <td style="text-align: right">0.2335</td>
+      <td style="text-align: right">0.2765</td>
+      <td style="text-align: right">0.4160</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Llama 2 70B (base)</td>
+      <td style="text-align: right">0.4830</td>
+      <td style="text-align: right">0.8686</td>
+      <td style="text-align: right">0.4656</td>
+      <td style="text-align: right">0.5256</td>
+      <td style="text-align: right">0.9080</td>
+      <td style="text-align: right">0.2361</td>
+      <td style="text-align: right">0.2398</td>
+      <td style="text-align: right">0.2643</td>
+      <td style="text-align: right">0.3560</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Swallow 70B (base)</strong></td>
+      <td style="text-align: right">0.5528</td>
+      <td style="text-align: right">0.9348</td>
+      <td style="text-align: right">0.6290</td>
+      <td style="text-align: right">0.696</td>
+      <td style="text-align: right">0.9176</td>
+      <td style="text-align: right">0.2266</td>
+      <td style="text-align: right">0.2298</td>
+      <td style="text-align: right">0.3043</td>
+      <td style="text-align: right">0.4840</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>パラメータ数が7Bである他のモデルと比較すると、Swallow 7Bはフルスクラッチで学習されたモデルやLlama 2ベースの他のモデルを上回る性能を示しました。唯一、Japanese Stable LM Gamma 7B（Mistral 7B v0.1からの継続事前学習）を下回る結果となりましたが、これはベースとしているMistral 7B v0.1の性能が高いことが理由として考えられます。今後、Mistral v0.1をベースにした継続事前学習にも取り組みたいと考えています。</p>
+
+<p>パラメータ数が13Bや70Bである他のモデルとの比較では、Swallowが最高性能を達成しています（2023年12月時点）。特に、13Bにおいてフルスクラッチで学習した他のモデルとの性能差が顕著に現れています。これらの実験結果から、性能の高い大規模言語モデルからの継続事前学習が効率的・効果的であることが示唆されますが、今後は大規模言語モデルのフルスクラッチでの学習において性能を高めるための方策や知見も探求していきたいと考えています。</p>
+
+<h4 id="評価ベンチマーク">評価ベンチマーク</h4>
+
+<p>日本語の評価ベンチマークとして<a href="https://github.com/llm-jp/llm-jp-eval">llm-jp-eval</a>(v1.0.0)および<a href="https://github.com/Stability-AI/lm-evaluation-harness">JP Language Model Evaluation Harness</a>(commit #9b42d41)を用いました。内訳は以下の通りです。</p>
+
+<ul>
+  <li>多値選択式質問応答 (JCommonsenseQA <a href="https://aclanthology.org/2022.lrec-1.317">[Kurihara+, 2022]</a>)</li>
+  <li>自由記述式質問応答 (JEMHopQA <a href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/Q8-14.pdf">[石井+, 2023]</a>)</li>
+  <li>自由記述式質問応答 (NIILC <a href="https://www.anlp.jp/proceedings/annual_meeting/2003/pdf_dir/C7-6.pdf">[関根, 2003]</a>)</li>
+  <li>機械読解 (JSQuAD <a href="https://aclanthology.org/2022.lrec-1.317">[Kurihara+, 2022]</a>)</li>
+  <li>自動要約 (XL-Sum <a href="https://aclanthology.org/2021.findings-acl.413">[Hasan+, 2021]</a>)</li>
+  <li>機械翻訳 (WMT2020 ja-en <a href="https://aclanthology.org/2020.wmt-1.1">[Barrault+, 2020]</a>)</li>
+  <li>機械翻訳 (WMT2020 en-ja <a href="https://aclanthology.org/2020.wmt-1.1">[Barrault+, 2020]</a>)</li>
+  <li>数学 (MGSM <a href="https://openreview.net/forum?id=fR3wGCk-IXp">[Shi+, 2023]</a>)</li>
+</ul>
+
+<p>なお、大規模言語モデルの評価ベンチマークとしてよく用いられる自然言語推論（NLI）については、言語モデルがラベルを偏って予測する傾向があり、そのラベル予測の偏りが正解と偶然一致するとスコアが高くなるため、（特に7Bや13Bで）評価結果が安定しませんでした。そのため、今回は評価ベンチマークから除外しています。</p>
+
+<p>英語の評価ベンチマークとして<a href="https://github.com/EleutherAI/lm-evaluation-harness">Language Model Evaluation Harness</a>(v.0.3.0)を用いました。内訳は以下の通りです。</p>
+
+<ul>
+  <li>多値選択式質問応答 (OpenBookQA <a href="https://aclanthology.org/D18-1260">[Mihaylov+, 2018]</a>)</li>
+  <li>自由記述式質問応答 (TriviaQA <a href="https://aclanthology.org/P17-1147">[Joshi+, 2017]</a>)</li>
+  <li>機械読解 (SQuAD 2.0 <a href="https://aclanthology.org/P18-2124/">[Rajpurkar+, 2018]</a>)</li>
+  <li>常識推論 (XWINO <a href="https://aclanthology.org/2021.findings-acl.310/">[Tikhonov &amp; Ryabinin, 2021]</a>)</li>
+  <li>自然言語推論 (HellaSwag <a href="https://aclanthology.org/P19-1472">[Zellers+, 2019]</a>)</li>
+  <li>数学 (GSM8k <a href="https://arxiv.org/abs/2110.14168">[Cobbe+, 2021]</a>)</li>
+</ul>
+
+
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 </section>
-<!-- end testimonials -->
+<!-- end section -->
+
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="method">
+                
+                <h2 class="section__title"><span class="text-span">構築方法</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            
+<h3 id="継続事前学習によるllama2の日本語の能力の大幅な改善">継続事前学習によるLlama2の日本語の能力の大幅な改善</h3>
+
+<p>米Meta AI社が開発したLlama 2シリーズは、オープンかつ高性能な大規模言語モデルとして世界中から支持を集めています。また、日本語も含めて、複数の言語からなるデータで学習されているため、Llama 2は日本語にも対応しています。ところが、Llama 2の事前学習データの約90%は英語が占めており、日本語の割合は全体の約0.10%に留まっています。そのため、Llama 2は英語で高い性能を示すにも関わらず、日本語の読み書きは苦手という弱点がありました。</p>
+
+<p>そこで、研究チームではLlama 2の7B, 13B, 70Bのモデルをベースに、大規模な日本語ウェブコーパスと英語のコーパスを9:1で混ぜたデータで継続事前学習を行い、元々の言語モデルの能力を活かしながら日本語能力の改善を目指しました。その結果、我々が採用した日本語に関するベンチマークデータにおいて、7B, 13B, 70Bの全てのモデルはベースモデルよりも高い性能を示しました。また、日本語コーパスのみで事前学習された同規模の日本語大規模言語モデルよりも高い性能を示すことから、継続事前学習の有効性が明らかになりました。</p>
+
+<h3 id="語彙拡張による大規模言語モデルの学習推論効率の改善">語彙拡張による大規模言語モデルの学習・推論効率の改善</h3>
+
+<p>Llama 2では、バイト対符号化（BPE; Byte-Pair Encoding）に基づいてテキストがトークン（token）に区切られています。ところが、Llama 2は英語を重視した多言語のモデルとして学習されているため、日本語の主要な単語や文字が語彙に含まれず、テキストが不自然な単位に区切られることがあります。例えば、「吾輩は猫である」という7文字のテキストは、<code class="language-plaintext highlighter-rouge">&lt;0xE5&gt;&lt;0x90&gt;&lt;0xBE&gt;&lt;0xE8&gt;&lt;0xBC&gt;&lt;0xA9&gt;は&lt;0xE7&gt;&lt;0x8C&gt;&lt;0xAB&gt;である</code>という、人間には理解しにくい13トークンに区切られます。これは、「吾」「輩」「猫」という漢字が語彙に収録されていないためで、バイトフォールバック（byte-fallback）によりUTF-8文字コードのバイト単位でこれらの漢字が表現されるからです。</p>
+
+<p>日本語の語彙が不足している言語モデルは、日本語を不自然な単位で取り扱うことに加え、テキストをより多くのトークンで表現してしまうため、学習や生成の効率が低下します。大規模言語モデルの学習に必要な計算予算はトークン数に比例するので、逆に計算予算が一定である条件下では、テキストを少ないトークンで表現する方がより多くの情報を学習に詰め込めます。また、大規模言語モデルがテキストを生成するのに要する時間はトークン数に比例するため、同じテキストを生成するのであれば、より少ない数のトークンで表現できる方が短時間で結果を出力できます。さらに、大規模言語モデルの入力や出力には、一度に扱えるトークン長の上限があります。入力をより少ないトークンで表現できる方が、タスクの指示や解き方（few-shot事例）を多く詰め込めるので、下流タスクでの性能向上も期待できます。研究チームはLlama 2のトークナイザに16,000件の日本語のトークンを追加することで、日本語テキストのトークン長を56.2%に削減しました。</p>
+
+<h3 id="大規模な日本語のウェブコーパスの開発">大規模な日本語のウェブコーパスの開発</h3>
+
+<p>大規模言語モデルの学習には膨大な言語データが必要です。その中でも、ウェブページを収集し、テキスト化したデータは、大規模言語モデルの構築の要です。従来、オープンな日本語大規模言語モデルの学習には、CC-100、mC4、OSCARなど既存のデータセットの日本語部分が用いられてきました。ところが、これらのデータセットでは、ウェブページのHTMLをテキスト化する際のノイズが混入していることや、最新の情報や知識を収録していないという問題がありました。また、これらは多言語のデータセットとして構築されているため、日本語に特化してデータの品質を高めるような工夫は取り入れられていません。</p>
+
+<p>そこで、研究チームではCommon Crawl（用語8）から配布されているアーカイブ（2020年から2023年にかけて収集された21スナップショット分、約634億ページ）から日本語のテキストを独自に抽出・精錬し、約3,121億文字（約1.73億ページ）からなる日本語ウェブコーパスを構築しました。この規模は、CC-100 (約258億文字）、mC4（約2,397億文字）、OSCAR 23.10（約740億文字）を抜き、日本語の言語モデルの学習コーパスの中で、商用利用が可能なものとしては最大となります。</p>
+
+<h3 id="その他">その他</h3>
+
+<p>Swallowの構築方法や実験結果については、準備が整い次第、随時情報を公開していきます。また、<a href="https://www.anlp.jp/nlp2024/">言語処理学会第30回年次大会(NLP2024)</a>でも報告予定です。</p>
+
+<ul>
+  <li><a href="https://zenn.dev/tokyotech_lm/articles/d6cb3a8fdfc907">Swallow: LLaMA-2 日本語継続事前学習モデル</a></li>
+</ul>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end section -->
+
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="acknowledgement">
+                
+                <h2 class="section__title"><span class="text-span">付記</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            
+<p>Swallowの研究開発は、産総研が構築・運用するAI橋渡しクラウド（ABCI: AI Bridging Cloud Infrastructure）の「大規模言語モデル構築支援プログラム」、国立研究開発法人新エネルギー・産業技術総合開発機構（NEDO）の「次世代人工知能・ロボットの中核となるインテグレート技術開発」プロジェクト (JPNP18002) の「熟練者観点に基づき、設計リスク評価業務における判断支援を行う人工知能適用技術の開発」、その他の支援によって実施されました。なお、本成果の一部は、大学共同利用機関法人情報・システム研究機構国立情報学研究所、産総研、東工大、NIIが主催する勉強会LLM-jp（NII、東北大学、東京大学、早稲田大学などが参加するLLM研究開発チーム）が2023年9月に共同で提案して採択された、産総研ABCIの一定部分（Aノードと呼ばれる高性能な計算ノード）を最大60日間占有利用する機会を提供する「大規模基盤モデル構築支援プログラム」によるものです。また、学習した大規模言語モデルの評価実験では、LLM-jp （LLM勉強会）で開発されているデータや知見を活用しました。</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end section -->
+
 
   </main>
   <!-- end content -->
@@ -600,7 +789,7 @@
   
     <div class="footer-cover">
       <div class="cover-image">
-        <img class="lazy" data-src="images/tokyotech-llm.png" alt="TokyoTech-LLM">
+        <img class="lazy" data-src="images/swallow-llama.png" alt="TokyoTech-LLM">
       </div>
     </div>
   
