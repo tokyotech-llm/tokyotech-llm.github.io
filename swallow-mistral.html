@@ -6,21 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>TokyoTech-LLM</title>
-  <meta name='description' content='東京工業大学情報理工学院の岡崎研究室と横田研究室で大規模言語モデルの研究・開発をしています'>
+  <title>Swallow on mistral</title>
+  <meta name='description' content='Mistral 7BおよびMixtral 8x7Bの日本語能力を強化した大規模言語モデル (Swallow-MS 7B, Swallow-MX 8x7B)'>
 
-  <link rel="canonical" href="https://tokyotech-llm.github.io/tag/llm">
+  <link rel="canonical" href="https://tokyotech-llm.github.io/swallow-mistral">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content=" – TokyoTech-LLM">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image:src" content="https://tokyotech-llm.github.io/images/tokyotech-llm.png">
+  <meta name="twitter:title" content="Swallow on mistral – TokyoTech-LLM">
+  <meta name="twitter:description" content="Mistral 7BおよびMixtral 8x7Bの日本語能力を強化した大規模言語モデル (Swallow-MS 7B, Swallow-MX 8x7B)">
+  <meta name="twitter:image:src" content="https://tokyotech-llm.github.io/images/swallow-mistral.png">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content=" – TokyoTech-LLM">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="https://tokyotech-llm.github.io/images/tokyotech-llm.png">
+  <meta property="og:title" content="Swallow on mistral – TokyoTech-LLM">
+  <meta property="og:description" content="Mistral 7BおよびMixtral 8x7Bの日本語能力を強化した大規模言語モデル (Swallow-MS 7B, Swallow-MX 8x7B)">
+  <meta property="og:image" content="https://tokyotech-llm.github.io/images/swallow-mistral.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800;900&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
   
     <div class="top-cover">
       <div class="cover-image">
-        <img class="lazy" data-src="/images/tokyotech-llm.png" alt="TokyoTech-LLM">
+        <img class="lazy" data-src="images/swallow-mistral.png" alt="TokyoTech-LLM">
       </div>
     </div>
   
@@ -90,7 +90,7 @@
                   
                     <a href="/swallow-llama" class="nav__link">Swallow</a>
                   
-                    <a href="/swallow-mistral" class="nav__link">Swallow in mistral</a>
+                    <a href="/swallow-mistral" class="nav__link active-link">Swallow in mistral</a>
                   
                     <a href="/swallow-corpus" class="nav__link">Swallow Corpus</a>
                   
@@ -122,82 +122,852 @@
 
   <!-- begin content -->
   <main class="content animate" aria-label="Content">
+    
+<!-- begin author -->
+<section class="author">
     <div class="container">
-  <div class="row">
-      <div class="col col-12">
-        <div class="page-head">
-          <div class="tag">
-            <h1 class="page-title">LLM</h1>
-            <div class="tag-meta">
-              <div class="tag-count">
-                <div class="tag-number">1</div>
+      <div class="row">
+        <div class="col col-12">
+          <div class="author__inner">
+  
+            <div class="author__left">
+              <h1 class="author__name">Swallow on mistral</h1>
+              <p class="author__bio">Mistral 7BおよびMixtral 8x7Bの日本語能力を強化した大規模言語モデル (Swallow-MS 7B, Swallow-MX 8x7B) です。Apache 2.0の寛容なライセンスでモデルのパラメータ（重み）を公開していますので、研究やビジネスに活用できます。</p>
+              
+              <a class="author__btn" href="https://huggingface.co/tokyotech-llm">
+                <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> View on HuggingFace
+              </a>
+              
+            </div>
+
+            <div class="author__right">
+              <div class="author__image">
+                <img class="lazy" data-src="https://tokyotech-llm.github.io/images/swallow-mistral.png" alt="Swallow on mistral" />
               </div>
-              <span>Article </span>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+<p><!-- end author --></p>
 
-<div class="container">
-  <div class="row">
-    <div class="col col-12">
-      <div class="contaniner__inner animate">
-        <div class="row">
-          
-            <div class="article col col-4 col-d-6 col-t-12">
-  <div class="article__inner">
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="abstract">
+                
+                <h2 class="section__title"><span class="text-span">概要</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            
+<p>大規模言語モデルSwallow-MS 7BおよびSwallow-MX 8x7Bは、東京工業大学情報理工学院の岡崎研究室と横田研究室、国立研究開発法人産業技術総合研究所の研究チームで開発された大規模言語モデルです。英語の言語理解や対話で高い能力を持つ大規模言語モデル<a href="https://mistral.ai/news/announcing-mistral-7b/">Mistral 7B</a>および<a href="https://mistral.ai/news/mixtral-of-experts/">Mixtral 8x7B</a>の日本語能力を強化するため、研究チームは日本語の大規模な言語データを用いて継続事前学習を行いました。研究チームで実施した性能評価では、オープンな7Bの大規模言語モデルの中で、Swallow-MS 7Bが日本語の知識や推論、言語生成に関するベンチマークにおいて最高性能を達成しました（2024年3月現在、ベースモデル間の比較において）。また、Mixture of Experts (MoE) アーキテクチャを採用し、日本語を強化したオープンなモデルとしては、Swallow-MX 8x7Bが史上初となります。今回公開したモデルはHugging Faceからモデルをダウンロードできます。</p>
 
-    
-      <div class="image-wrap">
-        <a class="article__image" href="https://tokyotech-llm.github.io/blog/swallow-llama">
-          <img class="lazy" data-src="https://tokyotech-llm.github.io/images/swallow-llama.png" alt="大規模言語モデルSwallowを公開">
-        </a>
-      </div>
-    
+<ul>
+  <li>Swallow-MS 7B base: <a href="https://huggingface.co/tokyotech-llm/Swallow-MS-7b-v0.1">https://huggingface.co/tokyotech-llm/Swallow-MS-7b-v0.1</a></li>
+  <li>Swallow-MX 8x7B: <a href="https://huggingface.co/tokyotech-llm/Swallow-MX-8x7b-NVE-v0.1">https://huggingface.co/tokyotech-llm/Swallow-MX-8x7b-NVE-v0.1</a></li>
+</ul>
 
-    <div class="article__content">
+<p>Swallow-MS 7BおよびSwallow-MX 8x7BのライセンスはMistral 7BおよびMixtral 8x7Bの<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>を継承しています。このライセンスに従う限りにおいては、研究および商業目的での利用が可能です。</p>
 
-      
-        <div class="article-tags__box">
-          
-            <a href="/tag/news" class="article__tag">news</a>
-          
-            <a href="/tag/LLM" class="article__tag">LLM</a>
-          
-        </div>
-      
 
-      <h2 class="article__title">
-        <a href="https://tokyotech-llm.github.io/blog/swallow-llama">大規模言語モデルSwallowを公開</a>
-      </h2>
-
-      <p class="article__excerpt">
-        Llama 2に対する継続事前学習で日本語を強化した大規模言語モデルSwallowを公開しました。詳しくは、Swallowをご覧ください。
-
-      </p>
-
-      <div class="article__meta">
-        <a href="/#about" class="article__author-image">
-          <img src="https://tokyotech-llm.github.io/images/tokyotech-llm.png" alt="TokyoTech-LLM">
-        </a>
-        <div class="article-info">
-          <a href="/#about" class="article__author-link">TokyoTech-LLM</a>
-          <span class="article__date"><time datetime="2023-12-19T15:00:00+09:00">19 Dec 2023</time></span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-          
+          </div>
         </div>
       </div>
     </div>
-  </div>
+</section>
+<!-- end section -->
+
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="evaluation">
+                
+                <h2 class="section__title"><span class="text-span">性能</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            
+<h3 id="swallow-ms-7b">Swallow-MS 7B</h3>
+
+<p>Mistral 7BやLlama 2に継続事前学習を行ったモデルや、その他の7Bモデルの日本語の性能を比較してみましょう。
+Swallow-MS 7Bは継続事前学習でMistral 7Bの日本語能力を着実に引き上げました。
+評価に用いた日本語ベンチマークでは、2024年3月時点で公開されている他のオープンな7Bモデルよりも、Swallow-MS 7Bが平均的に高い性能を示しています。
+特に、JCommonsenseQA (JComQA) やNIILCなど、知識を問うタスクでの大幅な性能向上を達成しており、これはLlama 2に対してSwallowが示す性能の傾向と似ています。
+また、Swallow-MS 7BではMistral 7Bに日本語の語彙を追加していますので、few-shot事例をより多く詰め込んだり、文字化けした生成を抑制したり、生成を高速化できます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">モデル</th>
+      <th style="text-align: right">日本語平均</th>
+      <th style="text-align: right">JComQA</th>
+      <th style="text-align: right">JEMHopQA</th>
+      <th style="text-align: right">NIILC</th>
+      <th style="text-align: right">JSQuAD</th>
+      <th style="text-align: right">XL-Sum</th>
+      <th style="text-align: right">日英翻訳</th>
+      <th style="text-align: right">英日翻訳</th>
+      <th style="text-align: right">MGSM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">CyberAgentLM2-7B (base)</td>
+      <td style="text-align: right">0.3098</td>
+      <td style="text-align: right">0.2198</td>
+      <td style="text-align: right">0.5047</td>
+      <td style="text-align: right">0.5066</td>
+      <td style="text-align: right">0.7799</td>
+      <td style="text-align: right">0.0233</td>
+      <td style="text-align: right">0.1499</td>
+      <td style="text-align: right">0.2345</td>
+      <td style="text-align: right">0.0600</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Llama 2 7B (base)</td>
+      <td style="text-align: right">0.3201</td>
+      <td style="text-align: right">0.3852</td>
+      <td style="text-align: right">0.4240</td>
+      <td style="text-align: right">0.3410</td>
+      <td style="text-align: right">0.7917</td>
+      <td style="text-align: right">0.1905</td>
+      <td style="text-align: right">0.1738</td>
+      <td style="text-align: right">0.1783</td>
+      <td style="text-align: right">0.0760</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 7B (base)</td>
+      <td style="text-align: right">0.3366</td>
+      <td style="text-align: right">0.3610</td>
+      <td style="text-align: right">0.4478</td>
+      <td style="text-align: right">0.4432</td>
+      <td style="text-align: right">0.8318</td>
+      <td style="text-align: right">0.2195</td>
+      <td style="text-align: right">0.1226</td>
+      <td style="text-align: right">0.1946</td>
+      <td style="text-align: right">0.0720</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 7B (base, 語彙拡張)</td>
+      <td style="text-align: right">0.2937</td>
+      <td style="text-align: right">0.2172</td>
+      <td style="text-align: right">0.4482</td>
+      <td style="text-align: right">0.4309</td>
+      <td style="text-align: right">0.8202</td>
+      <td style="text-align: right">0.0757</td>
+      <td style="text-align: right">0.1453</td>
+      <td style="text-align: right">0.1601</td>
+      <td style="text-align: right">0.0520</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ELYZA-japanese-Llama-2-7b (base)</td>
+      <td style="text-align: right">0.3467</td>
+      <td style="text-align: right">0.5791</td>
+      <td style="text-align: right">0.4703</td>
+      <td style="text-align: right">0.4019</td>
+      <td style="text-align: right">0.8226</td>
+      <td style="text-align: right">0.1312</td>
+      <td style="text-align: right">0.1289</td>
+      <td style="text-align: right">0.1795</td>
+      <td style="text-align: right">0.0600</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ELYZA-japanese-Llama-2-7b-fast (base, 語彙拡張)</td>
+      <td style="text-align: right">0.3312</td>
+      <td style="text-align: right">0.5308</td>
+      <td style="text-align: right">0.4330</td>
+      <td style="text-align: right">0.3898</td>
+      <td style="text-align: right">0.8131</td>
+      <td style="text-align: right">0.1289</td>
+      <td style="text-align: right">0.1143</td>
+      <td style="text-align: right">0.1678</td>
+      <td style="text-align: right">0.0720</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Youri 7B (base)</td>
+      <td style="text-align: right">0.3767</td>
+      <td style="text-align: right">0.4620</td>
+      <td style="text-align: right">0.4776</td>
+      <td style="text-align: right">0.4999</td>
+      <td style="text-align: right">0.8506</td>
+      <td style="text-align: right">0.1957</td>
+      <td style="text-align: right">0.1971</td>
+      <td style="text-align: right">0.2671</td>
+      <td style="text-align: right">0.0640</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Swallow 7B（base, 語彙拡張）</td>
+      <td style="text-align: right">0.3940</td>
+      <td style="text-align: right">0.4808</td>
+      <td style="text-align: right">0.5078</td>
+      <td style="text-align: right">0.5968</td>
+      <td style="text-align: right">0.8573</td>
+      <td style="text-align: right">0.1830</td>
+      <td style="text-align: right">0.1511</td>
+      <td style="text-align: right">0.2510</td>
+      <td style="text-align: right">0.1240</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Swallow 7B-plus (base, 語彙拡張)</td>
+      <td style="text-align: right">0.4090</td>
+      <td style="text-align: right">0.5478</td>
+      <td style="text-align: right">0.5493</td>
+      <td style="text-align: right">0.6030</td>
+      <td style="text-align: right">0.8544</td>
+      <td style="text-align: right">0.1806</td>
+      <td style="text-align: right">0.1441</td>
+      <td style="text-align: right">0.2568</td>
+      <td style="text-align: right">0.1360</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Qwen-7B</td>
+      <td style="text-align: right">0.3742</td>
+      <td style="text-align: right">0.7712</td>
+      <td style="text-align: right">0.4234</td>
+      <td style="text-align: right">0.2376</td>
+      <td style="text-align: right">0.8594</td>
+      <td style="text-align: right">0.1371</td>
+      <td style="text-align: right">0.1801</td>
+      <td style="text-align: right">0.1689</td>
+      <td style="text-align: right">0.2160</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nekomata 7B</td>
+      <td style="text-align: right">0.4185</td>
+      <td style="text-align: right">0.7417</td>
+      <td style="text-align: right">0.4928</td>
+      <td style="text-align: right">0.5022</td>
+      <td style="text-align: right">0.8707</td>
+      <td style="text-align: right">0.1676</td>
+      <td style="text-align: right">0.1815</td>
+      <td style="text-align: right">0.2673</td>
+      <td style="text-align: right">0.1240</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mistral-7B-v0.1 (7B, base)</td>
+      <td style="text-align: right">0.3717</td>
+      <td style="text-align: right">0.7301</td>
+      <td style="text-align: right">0.4245</td>
+      <td style="text-align: right">0.2722</td>
+      <td style="text-align: right">0.8563</td>
+      <td style="text-align: right">0.2006</td>
+      <td style="text-align: right">0.1733</td>
+      <td style="text-align: right">0.1405</td>
+      <td style="text-align: right">0.1760</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Base Gamma 7B (base)</td>
+      <td style="text-align: right">0.4301</td>
+      <td style="text-align: right">0.7364</td>
+      <td style="text-align: right">0.4643</td>
+      <td style="text-align: right">0.5568</td>
+      <td style="text-align: right">0.8910</td>
+      <td style="text-align: right">0.2293</td>
+      <td style="text-align: right">0.1561</td>
+      <td style="text-align: right">0.2390</td>
+      <td style="text-align: right">0.1680</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Swallow-MS 7B (base, 語彙拡張)</strong></td>
+      <td style="text-align: right">0.4524</td>
+      <td style="text-align: right">0.8570</td>
+      <td style="text-align: right">0.4915</td>
+      <td style="text-align: right">0.5519</td>
+      <td style="text-align: right">0.8802</td>
+      <td style="text-align: right">0.1988</td>
+      <td style="text-align: right">0.1667</td>
+      <td style="text-align: right">0.2494</td>
+      <td style="text-align: right">0.2240</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>続いて、英語の性能を見てみましょう。
+言語間転移の継続事前学習でよく見られる現象ですが、英語タスクでは元のモデル（Mistral 7B）よりも継続事前学習後のモデル（Swallow-MS 7B）の方が性能が低下しています。
+日本語の性能向上に連動するかのように、特にTriviaQAなどの知識を問うタスクでの性能低下が目立ちます。
+日本語と英語のデータを9:1で混ぜたり、学習率を調整するなどして、日本語の性能を高めつつ英語の性能低下を軽減するように努めていますが、モデルサイズが小さいためか、性能低下を完全に防ぐことはできませんでした。
+とは言え、Swallow-MS 7Bの英語の平均性能はLlama 2 7Bを若干上回っていますし、Swallow 7Bよりは高いですので、日本語と英語の両方に強いモデルとして活用されることを期待しています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">モデル</th>
+      <th style="text-align: right">平均</th>
+      <th style="text-align: right">OpenBookQA</th>
+      <th style="text-align: right">XWINO</th>
+      <th style="text-align: right">TriviaQA</th>
+      <th style="text-align: right">SQuAD 2.0</th>
+      <th style="text-align: right">HellaSwag</th>
+      <th style="text-align: right">GSM8k</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">CyberAgentLM2-7B (base)</td>
+      <td style="text-align: right">0.4026</td>
+      <td style="text-align: right">0.2860</td>
+      <td style="text-align: right">0.8581</td>
+      <td style="text-align: right">0.3496</td>
+      <td style="text-align: right">0.3510</td>
+      <td style="text-align: right">0.5003</td>
+      <td style="text-align: right">0.0705</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Llama-2-7b (base)</td>
+      <td style="text-align: right">0.4895</td>
+      <td style="text-align: right">0.3580</td>
+      <td style="text-align: right">0.9049</td>
+      <td style="text-align: right">0.6265</td>
+      <td style="text-align: right">0.3207</td>
+      <td style="text-align: right">0.5860</td>
+      <td style="text-align: right">0.1410</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 7B (base)</td>
+      <td style="text-align: right">0.4736</td>
+      <td style="text-align: right">0.3620</td>
+      <td style="text-align: right">0.8994</td>
+      <td style="text-align: right">0.5903</td>
+      <td style="text-align: right">0.2992</td>
+      <td style="text-align: right">0.5707</td>
+      <td style="text-align: right">0.1198</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 7B (base, 語彙拡張)</td>
+      <td style="text-align: right">0.4545</td>
+      <td style="text-align: right">0.3520</td>
+      <td style="text-align: right">0.8942</td>
+      <td style="text-align: right">0.5549</td>
+      <td style="text-align: right">0.3079</td>
+      <td style="text-align: right">0.5644</td>
+      <td style="text-align: right">0.0538</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ELYZA-japanese-Llama-2-7b (base)</td>
+      <td style="text-align: right">0.4703</td>
+      <td style="text-align: right">0.3400</td>
+      <td style="text-align: right">0.8989</td>
+      <td style="text-align: right">0.5875</td>
+      <td style="text-align: right">0.2721</td>
+      <td style="text-align: right">0.5595</td>
+      <td style="text-align: right">0.1638</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ELYZA-japanese-Llama-2-7b-fast (base, 語彙拡張)</td>
+      <td style="text-align: right">0.4608</td>
+      <td style="text-align: right">0.3280</td>
+      <td style="text-align: right">0.8989</td>
+      <td style="text-align: right">0.5817</td>
+      <td style="text-align: right">0.2605</td>
+      <td style="text-align: right">0.5530</td>
+      <td style="text-align: right">0.1425</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Youri 7B (base)</td>
+      <td style="text-align: right">0.4566</td>
+      <td style="text-align: right">0.3400</td>
+      <td style="text-align: right">0.8938</td>
+      <td style="text-align: right">0.5257</td>
+      <td style="text-align: right">0.3297</td>
+      <td style="text-align: right">0.5540</td>
+      <td style="text-align: right">0.0963</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Swallow 7B（base, 語彙拡張）</td>
+      <td style="text-align: right">0.4399</td>
+      <td style="text-align: right">0.3180</td>
+      <td style="text-align: right">0.8817</td>
+      <td style="text-align: right">0.4836</td>
+      <td style="text-align: right">0.3125</td>
+      <td style="text-align: right">0.5308</td>
+      <td style="text-align: right">0.1130</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Swallow 7B-plus (base, 語彙拡張)</td>
+      <td style="text-align: right">0.4370</td>
+      <td style="text-align: right">0.3280</td>
+      <td style="text-align: right">0.8929</td>
+      <td style="text-align: right">0.4558</td>
+      <td style="text-align: right">0.3134</td>
+      <td style="text-align: right">0.5259</td>
+      <td style="text-align: right">0.1061</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Qwen-7B</td>
+      <td style="text-align: right">0.5412</td>
+      <td style="text-align: right">0.3640</td>
+      <td style="text-align: right">0.8933</td>
+      <td style="text-align: right">0.5695</td>
+      <td style="text-align: right">0.3799</td>
+      <td style="text-align: right">0.5787</td>
+      <td style="text-align: right">0.4617</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nekomata 7B</td>
+      <td style="text-align: right">0.4380</td>
+      <td style="text-align: right">0.3340</td>
+      <td style="text-align: right">0.8766</td>
+      <td style="text-align: right">0.4371</td>
+      <td style="text-align: right">0.2933</td>
+      <td style="text-align: right">0.5340</td>
+      <td style="text-align: right">0.1531</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mistral-7B-v0.1 (7B, base)</td>
+      <td style="text-align: right">0.5577</td>
+      <td style="text-align: right">0.3660</td>
+      <td style="text-align: right">0.9157</td>
+      <td style="text-align: right">0.7050</td>
+      <td style="text-align: right">0.3799</td>
+      <td style="text-align: right">0.6264</td>
+      <td style="text-align: right">0.3533</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Base Gamma 7B (base)</td>
+      <td style="text-align: right">0.4860</td>
+      <td style="text-align: right">0.3240</td>
+      <td style="text-align: right">0.8976</td>
+      <td style="text-align: right">0.5745</td>
+      <td style="text-align: right">0.3546</td>
+      <td style="text-align: right">0.5739</td>
+      <td style="text-align: right">0.1911</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Swallow-MS 7B (base, 語彙拡張)</strong></td>
+      <td style="text-align: right">0.5042</td>
+      <td style="text-align: right">0.3440</td>
+      <td style="text-align: right">0.9037</td>
+      <td style="text-align: right">0.5976</td>
+      <td style="text-align: right">0.3364</td>
+      <td style="text-align: right">0.5810</td>
+      <td style="text-align: right">0.2623</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>これらの評価結果の一部を抜き出し、レーダーチャートとして可視化したものを載せておきます。</p>
+
+<div class="row">
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="images/7Bms_ja.svg">
+                <img class="lazy" data-src="images/7Bms_ja.svg" alt="7Bモデルの性能（日本語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">7Bモデルの性能（日本語）</h2>
+      
+            
+          </div>
+        </div>
+    </div>
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="images/7Bms_en.svg">
+                <img class="lazy" data-src="images/7Bms_en.svg" alt="7Bモデルの性能（英語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">7Bモデルの性能（英語）</h2>
+      
+            
+          </div>
+        </div>
+    </div>
+    
 </div>
+
+<h3 id="swallow-mx-8x7b">Swallow-MX 8x7B</h3>
+
+<p>続いて、Swallow-MX 8x7Bについて見ていきたいと思います。
+このモデルは7Bのモデルを8個組み合わせたMixture of Experts (MoE) モデルですので、パラメータ総数が近い70Bモデルと比較します（Mixtralは注意機構や層正規化のパラメータをエキスパート間で共有しているため、パラメータ総数は47Bになります）。
+日本語のベンチマークにおける評価では、Swallow-MX 8x7Bは継続事前学習でMixtral 8x7Bの日本語能力を着実に引き上げたことが分かります。
+やはり、JCommonsenseQA (JComQA) やNIILCなど、知識を問うタスクでの大幅な性能向上が見られます。
+よりパラメータ総数の多いSwallow 70Bを上回ることはできませんでしたが、70B級のモデルに匹敵する性能を示すことから、MoEモデルのポテンシャルの高さが伺えます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">モデル</th>
+      <th style="text-align: right">日本語平均</th>
+      <th style="text-align: right">JComQA</th>
+      <th style="text-align: right">JEMHopQA</th>
+      <th style="text-align: right">NIILC</th>
+      <th style="text-align: right">JSQuAD</th>
+      <th style="text-align: right">XL-Sum</th>
+      <th style="text-align: right">日英翻訳</th>
+      <th style="text-align: right">英日翻訳</th>
+      <th style="text-align: right">MGSM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">KARAKURI LM 70B (base)</td>
+      <td style="text-align: right">0.4669</td>
+      <td style="text-align: right">0.8579</td>
+      <td style="text-align: right">0.5125</td>
+      <td style="text-align: right">0.5713</td>
+      <td style="text-align: right">0.9100</td>
+      <td style="text-align: right">0.1464</td>
+      <td style="text-align: right">0.2113</td>
+      <td style="text-align: right">0.2540</td>
+      <td style="text-align: right">0.2720</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Llama-2-70b (base)</td>
+      <td style="text-align: right">0.4830</td>
+      <td style="text-align: right">0.8686</td>
+      <td style="text-align: right">0.4656</td>
+      <td style="text-align: right">0.5256</td>
+      <td style="text-align: right">0.9080</td>
+      <td style="text-align: right">0.2361</td>
+      <td style="text-align: right">0.2398</td>
+      <td style="text-align: right">0.2643</td>
+      <td style="text-align: right">0.3560</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 70B (base)</td>
+      <td style="text-align: right">0.5138</td>
+      <td style="text-align: right">0.9115</td>
+      <td style="text-align: right">0.4925</td>
+      <td style="text-align: right">0.6042</td>
+      <td style="text-align: right">0.9192</td>
+      <td style="text-align: right">0.2573</td>
+      <td style="text-align: right">0.2335</td>
+      <td style="text-align: right">0.2765</td>
+      <td style="text-align: right">0.4160</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Swallow 70B（base, 語彙拡張）</td>
+      <td style="text-align: right">0.5528</td>
+      <td style="text-align: right">0.9348</td>
+      <td style="text-align: right">0.6290</td>
+      <td style="text-align: right">0.6960</td>
+      <td style="text-align: right">0.9176</td>
+      <td style="text-align: right">0.2266</td>
+      <td style="text-align: right">0.2298</td>
+      <td style="text-align: right">0.3043</td>
+      <td style="text-align: right">0.4840</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Qwen-14B</td>
+      <td style="text-align: right">0.4431</td>
+      <td style="text-align: right">0.8829</td>
+      <td style="text-align: right">0.4243</td>
+      <td style="text-align: right">0.3220</td>
+      <td style="text-align: right">0.8980</td>
+      <td style="text-align: right">0.1851</td>
+      <td style="text-align: right">0.2224</td>
+      <td style="text-align: right">0.2223</td>
+      <td style="text-align: right">0.3880</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Qwen-72B</td>
+      <td style="text-align: right">0.5244</td>
+      <td style="text-align: right">0.9294</td>
+      <td style="text-align: right">0.5566</td>
+      <td style="text-align: right">0.4518</td>
+      <td style="text-align: right">0.9159</td>
+      <td style="text-align: right">0.2179</td>
+      <td style="text-align: right">0.2356</td>
+      <td style="text-align: right">0.2561</td>
+      <td style="text-align: right">0.6320</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mixtral 8x7B v0.1 (instruct)</td>
+      <td style="text-align: right">0.4486</td>
+      <td style="text-align: right">0.8400</td>
+      <td style="text-align: right">0.5033</td>
+      <td style="text-align: right">0.3107</td>
+      <td style="text-align: right">0.8808</td>
+      <td style="text-align: right">0.2002</td>
+      <td style="text-align: right">0.2063</td>
+      <td style="text-align: right">0.1956</td>
+      <td style="text-align: right">0.4520</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Swallow-MX 8x7B</strong></td>
+      <td style="text-align: right">0.5208</td>
+      <td style="text-align: right">0.9258</td>
+      <td style="text-align: right">0.5843</td>
+      <td style="text-align: right">0.5687</td>
+      <td style="text-align: right">0.9148</td>
+      <td style="text-align: right">0.2589</td>
+      <td style="text-align: right">0.2074</td>
+      <td style="text-align: right">0.2705</td>
+      <td style="text-align: right">0.4360</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>最後に、Swallow-MX 8x7Bの英語の性能を見てみたいと思います。
+Swallow-MS 7Bの時とは異なり、Swallow-MX 8x7Bでは元のモデルであるMixtral 8x7B Instructからの性能低下があまり見られません。
+英語の性能低下の軽減は Swallow 70B でも確認されているため、MoEアーキテクチャか否かを問わず、モデルパラメータ数の大規模化が性能低下の軽減に有効である可能性があります。
+ただしSwallow-MX 8x7Bの継続事前学習では（学習フレームワークのバグ検証の歴史的経緯により）日本語:英語=72:28の学習データを採用していますので、学習データの日英混合比の違いによる可能性についても、今後検証したいと考えています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">モデル</th>
+      <th style="text-align: right">平均</th>
+      <th style="text-align: right">OpenBookQA</th>
+      <th style="text-align: right">XWINO</th>
+      <th style="text-align: right">TriviaQA</th>
+      <th style="text-align: right">SQuAD 2.0</th>
+      <th style="text-align: right">HellaSwag</th>
+      <th style="text-align: right">GSM8k</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Llama-2-70b (base)</td>
+      <td style="text-align: right">0.6268</td>
+      <td style="text-align: right">0.4280</td>
+      <td style="text-align: right">0.9290</td>
+      <td style="text-align: right">0.8239</td>
+      <td style="text-align: right">0.3770</td>
+      <td style="text-align: right">0.6742</td>
+      <td style="text-align: right">0.5284</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Japanese Stable LM Beta 70B (base)</td>
+      <td style="text-align: right">0.6288</td>
+      <td style="text-align: right">0.4200</td>
+      <td style="text-align: right">0.9299</td>
+      <td style="text-align: right">0.8203</td>
+      <td style="text-align: right">0.3867</td>
+      <td style="text-align: right">0.6729</td>
+      <td style="text-align: right">0.5428</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Swallow 70B（base, 語彙拡張）</td>
+      <td style="text-align: right">0.6042</td>
+      <td style="text-align: right">0.4220</td>
+      <td style="text-align: right">0.9204</td>
+      <td style="text-align: right">0.7756</td>
+      <td style="text-align: right">0.3745</td>
+      <td style="text-align: right">0.6458</td>
+      <td style="text-align: right">0.4867</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Qwen-14B</td>
+      <td style="text-align: right">0.5945</td>
+      <td style="text-align: right">0.3720</td>
+      <td style="text-align: right">0.9067</td>
+      <td style="text-align: right">0.6543</td>
+      <td style="text-align: right">0.4167</td>
+      <td style="text-align: right">0.6473</td>
+      <td style="text-align: right">0.5701</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Qwen-72B</td>
+      <td style="text-align: right">0.6369</td>
+      <td style="text-align: right">0.4040</td>
+      <td style="text-align: right">0.9200</td>
+      <td style="text-align: right">0.7501</td>
+      <td style="text-align: right">0.3401</td>
+      <td style="text-align: right">0.6647</td>
+      <td style="text-align: right">0.7422</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mixtral 8x7B v0.1 (instruct)</td>
+      <td style="text-align: right">0.6335</td>
+      <td style="text-align: right">0.4160</td>
+      <td style="text-align: right">0.9226</td>
+      <td style="text-align: right">0.7740</td>
+      <td style="text-align: right">0.3714</td>
+      <td style="text-align: right">0.6823</td>
+      <td style="text-align: right">0.6346</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Swallow-MX 8x7B</strong></td>
+      <td style="text-align: right">0.6129</td>
+      <td style="text-align: right">0.3740</td>
+      <td style="text-align: right">0.9170</td>
+      <td style="text-align: right">0.7847</td>
+      <td style="text-align: right">0.3801</td>
+      <td style="text-align: right">0.6520</td>
+      <td style="text-align: right">0.5694</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="row">
+    
+    <div class="article col col-6 col-d-6 col-t-12">
+        <div class="figure__inner">
+      
+          
+            <div class="image-wrap">
+              <a class="figure__image" href="images/47Bmx_ja.svg">
+                <img class="lazy" data-src="images/47Bmx_ja.svg" alt="47B, 70B級モデルの性能（日本語）" />
+              </a>
+            </div>
+          
+      
+          <div class="figure__content">
+            
+            <h2 class="figure__title">47B, 70B級モデルの性能（日本語）</h2>
+      
+            
+          </div>
+        </div>
+    </div>
+    
+</div>
+
+<p>なお、ベンチマークのスコアを異なるデータセット間で比較することができないことに注意してください。例えば、あるモデルの日本語の評価結果において、機械翻訳のスコアよりも数学のスコアの方が高いとき、そのモデルが翻訳よりも数学が得意であることを示唆しているのではありません（問題の難易度や採点基準が全く異なる試験の結果を比較しているようなものです）。同様の理由により、あるモデルの　日本語タスクのスコアの平均値よりも、英語タスクのスコアの平均値の方が高いからといって、そのモデルは英語の方が得意、と結論付けることもできません。ベンチマークのデータセットによって評価尺度や難易度が異なるため、このレーダーチャートの形状だけからタスクの得意・不得意について議論することは不適切です。</p>
+
+<h4 id="評価ベンチマーク">評価ベンチマーク</h4>
+
+<p>日本語の評価ベンチマークとして<a href="https://github.com/llm-jp/llm-jp-eval">llm-jp-eval</a>(v1.0.0)および<a href="https://github.com/Stability-AI/lm-evaluation-harness">JP Language Model Evaluation Harness</a>(commit #9b42d41)を用いました。内訳は以下の通りです。</p>
+
+<ul>
+  <li>多値選択式質問応答 (JCommonsenseQA <a href="https://aclanthology.org/2022.lrec-1.317">[Kurihara+, 2022]</a>)</li>
+  <li>自由記述式質問応答 (JEMHopQA <a href="https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/Q8-14.pdf">[石井+, 2023]</a>)</li>
+  <li>自由記述式質問応答 (NIILC <a href="https://www.anlp.jp/proceedings/annual_meeting/2003/pdf_dir/C7-6.pdf">[関根, 2003]</a>)</li>
+  <li>機械読解 (JSQuAD <a href="https://aclanthology.org/2022.lrec-1.317">[Kurihara+, 2022]</a>)</li>
+  <li>自動要約 (XL-Sum <a href="https://aclanthology.org/2021.findings-acl.413">[Hasan+, 2021]</a>)</li>
+  <li>機械翻訳 (WMT2020 ja-en <a href="https://aclanthology.org/2020.wmt-1.1">[Barrault+, 2020]</a>)</li>
+  <li>機械翻訳 (WMT2020 en-ja <a href="https://aclanthology.org/2020.wmt-1.1">[Barrault+, 2020]</a>)</li>
+  <li>数学 (MGSM <a href="https://openreview.net/forum?id=fR3wGCk-IXp">[Shi+, 2023]</a>)</li>
+</ul>
+
+<p>なお、大規模言語モデルの評価ベンチマークとしてよく用いられる自然言語推論（NLI）については、言語モデルがラベルを偏って予測する傾向があり、そのラベル予測の偏りが正解と偶然一致するとスコアが高くなるため、（特に7Bで）評価結果が安定しませんでした。そのため、今回は評価ベンチマークから除外しています。</p>
+
+<p>英語の評価ベンチマークとして<a href="https://github.com/EleutherAI/lm-evaluation-harness">Language Model Evaluation Harness</a>(v.0.3.0)を用いました。内訳は以下の通りです。</p>
+
+<ul>
+  <li>多値選択式質問応答 (OpenBookQA <a href="https://aclanthology.org/D18-1260">[Mihaylov+, 2018]</a>)</li>
+  <li>自由記述式質問応答 (TriviaQA <a href="https://aclanthology.org/P17-1147">[Joshi+, 2017]</a>)</li>
+  <li>機械読解 (SQuAD 2.0 <a href="https://aclanthology.org/P18-2124/">[Rajpurkar+, 2018]</a>)</li>
+  <li>常識推論 (XWINO <a href="https://aclanthology.org/2021.findings-acl.310/">[Tikhonov &amp; Ryabinin, 2021]</a>)</li>
+  <li>自然言語推論 (HellaSwag <a href="https://aclanthology.org/P19-1472">[Zellers+, 2019]</a>)</li>
+  <li>数学 (GSM8k <a href="https://arxiv.org/abs/2110.14168">[Cobbe+, 2021]</a>)</li>
+</ul>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end section -->
+
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="method">
+                
+                <h2 class="section__title"><span class="text-span">構築方法</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            
+<p>Swallow-MS 7BとSwallow-MX 8x7Bはそれぞれ、Mistral 7BとMixtral 8x7B Instructに継続事前学習を施すことによって構築されています。
+算術推論とコード生成に強い日本語大規模言語モデルを目指し、ソースコードのコーパスをテキストコーパスに混ぜて利用しています。
+具体的には、Swallow-MS 7Bでは数学関連ソースコードのコーパスであるAlgebraicStack [Azerbayev+, 2024]を学習し、Swallow-MX 8x7BではAlgebraicStackに加えて、自然言語とソースコードが対になったコーパスであるThe Vault [Nguyen+, 2023]も学習しました。
+なおソースコードのコーパスの利用がもたらす効果は、比較実験などにより今後検証を進めたいと考えています。
+テキストコーパスは、Swallowと同様に日本語と英語が9:1（ただし、Swallow-MX 8x7Bでは72:28）の混合比で、日本語は<a href="swallow-corpus">Swallowコーパス</a>と日本語Wikipedia，英語はRefinedWebとThe StackのarXivサブセットを用いました。
+今回は、Swallow-MS 7Bにのみ日本語の語彙を追加し、Swallow-MX 8x7Bには語彙拡張を適用しませんでした。
+語彙追加により、語彙に含まれる平仮名文字の種類数は58から83に、片仮名文字の種類数は76から87に、漢字の種類数は1,456から3,208に増加しました。
+MistralおよびMixtralの追加事前学習には、独自に開発したソフトウェアを用いました。</p>
+
+<h3 id="その他">その他</h3>
+
+<p>Swallow-MSやSwallow-MXの構築方法や実験結果については、以下のサイトで詳細を公開しています。</p>
+
+<ul>
+  <li><a href="https://zenn.dev/tokyotech_lm/articles/3f71df3cd2e589">Swallow-MS: Mistral日本語継続事前学習モデル</a></li>
+  <li><a href="https://zenn.dev/tokyotech_lm/articles/5f4211b9ed3197">Swallow-MX: Mixtral日本語継続事前学習MoEモデル</a></li>
+</ul>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end section -->
+
+<!-- begin section -->
+<section class="section projects" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="contaniner__inner animate">
+            <div class="section__info">
+              <div class="section__head">
+                
+                <a name="acknowledgement">
+                
+                <h2 class="section__title"><span class="text-span">付記</span></h2>
+                
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            
+<p>Swallow-MSおよびSwallow-MXの研究開発は、産総研が構築・運用するAI橋渡しクラウド（ABCI: AI Bridging Cloud Infrastructure）の「大規模言語モデル構築支援プログラム」、国立研究開発法人新エネルギー・産業技術総合開発機構（NEDO）の「次世代人工知能・ロボットの中核となるインテグレート技術開発」プロジェクト (JPNP18002) の「熟練者観点に基づき、設計リスク評価業務における判断支援を行う人工知能適用技術の開発」、その他の支援によって実施されました。なお、本成果の一部は、大学共同利用機関法人情報・システム研究機構国立情報学研究所、産総研、東工大、NIIが主催する勉強会LLM-jp（NII、東北大学、東京大学、早稲田大学などが参加するLLM研究開発チーム）が2023年9月に共同で提案して採択された、産総研ABCIの一定部分（Aノードと呼ばれる高性能な計算ノード）を最大60日間占有利用する機会を提供する「大規模基盤モデル構築支援プログラム」によるものです。また、学習した大規模言語モデルの評価実験では、LLM-jp （LLM勉強会）で開発されているデータや知見を活用しました。</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end section -->
+
+
   </main>
   <!-- end content -->
 
@@ -253,7 +1023,7 @@
   
     <div class="footer-cover">
       <div class="cover-image">
-        <img class="lazy" data-src="/images/tokyotech-llm.png" alt="TokyoTech-LLM">
+        <img class="lazy" data-src="images/swallow-mistral.png" alt="TokyoTech-LLM">
       </div>
     </div>
   
